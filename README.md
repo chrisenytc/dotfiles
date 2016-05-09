@@ -78,7 +78,7 @@ Install the python `3.5.1`
 pyenv install 3.5.1
 ```
 
-** Note: ** If you have any issue with the zlib try with the command below:
+**Note:** If you have any issue with the zlib try with the command below:
 
 ```bash
 CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install -v 3.5.1
@@ -127,7 +127,7 @@ gvm use 1.6.2 --default
 
 Now see if the version is correct: `go version`.
 
-** Note: ** Rust, Elixir and Ocaml are already installed by `install.sh`.
+**Note:** Rust, Elixir and Ocaml are already installed by `install.sh`.
 
 # Final
 
