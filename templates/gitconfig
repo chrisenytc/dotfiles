@@ -1,0 +1,28 @@
+[user]
+	name = Christopher EnyTC
+	email = chris@enytc.com
+[color]
+	ui = true
+[push]
+	default = simple
+	followTags = true
+[alias]
+	a = add .
+	c = clone
+	cm = commit -m
+	p = push origin
+	pm = push origin master
+	co = checkout
+	nb = checkout -b
+	st = status
+	br = branch
+	heroku = push heroku master
+	ghpage = checkout --orphan gh-pages
+	type = cat-file -t
+	dump = cat-file -p
+	undo = reset --soft HEAD~1
+	cls = rm --cached
+	rr = rm -r
+	rt = remote add
+	rv = remote -v
+	rrm = remote rm
