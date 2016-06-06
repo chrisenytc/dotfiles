@@ -11,7 +11,7 @@ The first step is install the Xcode in the mac app store, after installed check 
 Apps that I use installed with the mac app store
 
 - [Twitter](https://twitter.com)
-- [CloudMagic](https://cloudmagic.com)
+- [Airmail](http://airmailapp.com)
 - [Wire](https://wire.com)
 
 # Fonts
