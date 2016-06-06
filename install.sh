@@ -47,17 +47,6 @@ mkdir $LABS_PATH/EnyTC/Node
 mkdir $LABS_PATH/EnyTC/Ruby
 mkdir $LABS_PATH/EnyTC/Web
 
-# Pagar.me Lab
-mkdir $LABS_PATH/PagarMe
-#Languages
-mkdir $LABS_PATH/PagarMe/Node
-mkdir $LABS_PATH/PagarMe/Ruby
-mkdir $LABS_PATH/PagarMe/Go
-mkdir $LABS_PATH/PagarMe/PHP
-mkdir $LABS_PATH/PagarMe/Shell
-mkdir $LABS_PATH/PagarMe/Markdown
-mkdir $LABS_PATH/PagarMe/Web
-
 # Set wallpaper
 
 echo "Copying the wallpaper"
