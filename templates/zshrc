@@ -114,6 +114,7 @@ alias eg="mvim $HOME/.gitconfig"
 alias ev="mvim $HOME/.vim/vimrc"
 alias erc="mvim $HOME/.zshrc"
 alias urc="source $HOME/.zshrc"
+alias pretty="python -m json.tool"
 
 # Environment variables
 
