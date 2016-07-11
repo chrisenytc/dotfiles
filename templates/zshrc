@@ -126,6 +126,7 @@ export RBENV_ROOT=$HOME/.rbenv
 eval "$(nodenv init -)"
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
+eval "$(hub alias -s)"
 
 # Docker
 eval $(docker-machine env)
