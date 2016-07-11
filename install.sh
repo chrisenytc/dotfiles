@@ -99,6 +99,8 @@ brew cask install macvim
 
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
+echo "Installing Ngrok"
+brew cask install ngrok
 
 echo "Installing Slack"
 brew cask install slack
@@ -156,6 +158,9 @@ brew cask install dockertoolbox
 
 echo "Creating Docker Virtual Machine"
 docker-machine create --driver virtualbox default
+
+echo "Installing XCode select"
+xcode-select --install
 
 echo "--------------------------------------------------------------------------------------------------------------"
 echo "Done!"
