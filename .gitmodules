@@ -1,3 +1,0 @@
-[submodule "vimfiles"]
-	path = vimfiles
-	url = git@github.com:chrisenytc/vimfiles.git
