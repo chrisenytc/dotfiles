@@ -1,5 +1,5 @@
 [user]
-	name = Christopher EnyTC
+	name = Christopher Enytc
 	email = chris@enytc.com
 [color]
 	ui = true
@@ -26,3 +26,10 @@
 	rt = remote add
 	rv = remote -v
 	rrm = remote rm
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
