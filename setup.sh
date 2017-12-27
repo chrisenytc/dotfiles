@@ -3,13 +3,18 @@
 echo "Granting admin permission to $USER"
 sudo chown -R $USER:admin /usr/local
 
+
+echo "Cloning vimfiles"
+
+git clone git@github.com:chrisenytc/vimfiles.git $HOME/.vim
+
 # Copy templates
 
 echo "Copying templates:"
 
-ln -s $(pwd)/vimfiles ~/.vim
-ln -s $(pwd)/vimfiles/vimrc ~/.vimrc
-ln -s $(pwd)/vimfiles/gvimrc ~/.gvimrc
+ln -s $HOME/.vim/vimrc ~/.vimrc
+ln -s $HOME/.vim/gvimrc ~/.gvimrc
+
 ln -s $(pwd)/templates/gitconfig ~/.gitconfig
 ln -s $(pwd)/templates/npmrc ~/.npmrc
 ln -s $(pwd)/templates/zshrc ~/.zshrc
@@ -40,12 +45,15 @@ mkdir $LABS_PATH/Personal/Swift
 mkdir $LABS_PATH/Personal/Markdown
 mkdir $LABS_PATH/Personal/Web
 
-# EnyTC Lab
-mkdir $LABS_PATH/EnyTC
-#Languages
-mkdir $LABS_PATH/EnyTC/Node
-mkdir $LABS_PATH/EnyTC/Ruby
-mkdir $LABS_PATH/EnyTC/Web
+# Enytc Lab
+mkdir $LABS_PATH/Enytc
+# Languages
+mkdir $LABS_PATH/Enytc/Node
+mkdir $LABS_PATH/Enytc/Ruby
+mkdir $LABS_PATH/Enytc/Go
+mkdir $LABS_PATH/Enytc/Elixir
+mkdir $LABS_PATH/Enytc/Shell
+mkdir $LABS_PATH/Enytc/Web
 
 # Set wallpaper
 
@@ -73,94 +81,38 @@ echo "Installing binaries:"
 echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Installing hub"
+brew install hub
+
 echo "Installing wget"
 brew install wget
 
 echo "Installing vim"
 brew install vim
 
+echo "Installing neovim"
+brew install neovim
+
 echo "Installing Cask"
 brew tap caskroom/cask
-
-echo "Installing 1Password"
-brew cask install 1password
-
-echo "Installing Opera"
-brew cask install opera
-
-echo "Installing Firefox"
-brew cask install firefox
-
-echo "Installing Google Chrome"
-brew cask install google-chrome
 
 echo "Installing MacVim"
 brew cask install macvim
 
+echo "Installing VimR"
+brew cask install vimr
+
 echo "Installing TunnelBlick"
 brew cask install tunnelblick
+
 echo "Installing Ngrok"
 brew cask install ngrok
-
-echo "Installing Slack"
-brew cask install slack
-
-echo "Installing Skype"
-brew cask install skype
-
-echo "Installing Telegram"
-brew cask install telegram
-
-echo "Installing Gitter"
-brew cask install gitter
-
-echo "Installing Nylas N1"
-brew cask install nylas-n1
-
-echo "Installing Stremio"
-brew cask install stremio
-
-echo "Installing Ghost"
-brew cask install ghost
-
-echo "Installing Cloak"
-brew cask install cloak
 
 # Install programming languages
 
 echo "Installing nodenv"
 brew install nodenv
-
-echo "Installing pyenv"
-brew install pyenv
-
-echo "Installing rbenv"
-brew install rbenv
-
-echo "Installing gvm"
-
-zsh < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-
-echo "Installing rust"
-brew cask install rust
-
-echo "Installing rust"
-brew install elixir
-
-echo "Installing ocaml"
-brew install ocaml
-
-echo "Installing opam"
-brew install opam
-
-echo "Installing Docker Toolbox"
-brew cask install dockertoolbox
-
-echo "Creating Docker Virtual Machine"
-docker-machine create --driver virtualbox default
-
-echo "Installing XCode select"
-xcode-select --install
+brew upgrade node-build
 
 echo "--------------------------------------------------------------------------------------------------------------"
 echo "Done!"
