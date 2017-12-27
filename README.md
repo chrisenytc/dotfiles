@@ -51,7 +51,7 @@ Apps that I use installed with the mac app store
 - [Awesome Screenshot](https://safari-extensions.apple.com/details/?id=com.diigo.safari.awesomescreenshot-5DXNM3K2CT/)
 - [Grammarly for Safari](https://safari-extensions.apple.com/details/?id=com.grammarly.spellchecker.extension-W8F64X92K3/)
 - [URL Advisor](https://safari-extensions.apple.com/details/?id=com.kaspersky.urla-2Y8XE5CQ94/)
-- [Honey][https://safari-extensions.apple.com/details/?id=forge.safari.honey985c8d42048c4cbeb0bed522bd235ee7-4NREU46PA6/]
+- [Honey](https://safari-extensions.apple.com/details/?id=forge.safari.honey985c8d42048c4cbeb0bed522bd235ee7-4NREU46PA6/)
 
 # Fonts
 
