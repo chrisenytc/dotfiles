@@ -117,5 +117,11 @@ echo "Installing nodenv"
 brew install nodenv
 brew upgrade node-build
 
+echo "Installing spacevim"
+curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
+
+echo "Installing spacevim files"
+git clone git@github.com:chrisenytc/spacevim.git $HOME/.SpaceVim.d
+
 echo "--------------------------------------------------------------------------------------------------------------"
 echo "Done!"
