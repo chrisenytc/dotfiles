@@ -19,6 +19,9 @@ ln -s $(pwd)/templates/gitconfig ~/.gitconfig
 ln -s $(pwd)/templates/npmrc ~/.npmrc
 ln -s $(pwd)/templates/zshrc ~/.zshrc
 
+echo "Creating secret configs for zsh"
+touch $HOME/.zsh-secret-configs
+
 # Make the Lab
 
 echo "Making the Lab"
