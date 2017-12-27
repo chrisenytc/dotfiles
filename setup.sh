@@ -74,12 +74,7 @@ cd $HOME
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
 
-echo "Installing Oh My Zsh"
-curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-
 # Install utilities
-
-echo "Installing binaries:"
 
 echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -111,16 +106,38 @@ brew cask install tunnelblick
 echo "Installing Ngrok"
 brew cask install ngrok
 
+echo "Installing heroku cli"
+brew install heroku/brew/heroku
+
 # Install programming languages
+
+echo "Installing python"
+brew brew uninstall --ignore-dependencies python
+brew install python
+brew install python3
 
 echo "Installing nodenv"
 brew install nodenv
 brew upgrade node-build
 
+echo "Installing node"
+nodenv install 8.9.3
+nodenv global 8.9.3
+nodenv rehash
+
+echo "Installing node global dependencies"
+npm i -g vtop mocha serve typescript localtunnel eslint eslint-plugin-import eslint-config-airbnb-base
+
+echo "Nvim dependencies"
+pip2 install neovim --user neovim
+pip3 install neovim --user neovim
+npm i -g neovim
+gem install neovim
+
 echo "Installing spacevim"
 curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
 
-echo "Installing spacevim files"
+echo "Installing spacevim custom files"
 git clone git@github.com:chrisenytc/spacevim.git $HOME/.SpaceVim.d
 
 echo "--------------------------------------------------------------------------------------------------------------"
